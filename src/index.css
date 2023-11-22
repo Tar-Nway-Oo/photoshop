@@ -1,0 +1,73 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 1em;
+   background-color: rgb(218, 214, 221);
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.filter {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   gap: .5em;
+   margin-bottom: .5em;
+}
+
+.filter-button {
+   padding: 1em;
+   background-color: rgb(179, 165, 192);
+}
+
+.filter-button:hover, .active {
+   background-color: rgb(159, 117, 196);
+}
+
+.image {
+   width: 100%;
+   max-width: 800px;
+}
+
+.input {
+   display: block;
+   padding: 1em;
+   margin: 1em 0;
+}
+
+.button {
+   padding: .7em;
+   background-color: rgb(96, 96, 173);
+   border-radius: .5em;
+}
+
+.slider {
+   padding: .5em;
+   width: 100%;
+
+}
+
+.slider-input {
+   width: 100%;
+   max-width: 800px;
+
+}
+
+@media (max-width: 600px) {
+   .filter-button {
+      padding: .5em;
+   }
+
+   .input {
+      padding: .5em;
+   }
+}
